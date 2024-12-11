@@ -1,7 +1,11 @@
-{
-    name: "Add Daily Rewards",
-    description: "Gives you you're daily rewards.",
-    author: "Author",
-    version: "1.0",
-    action: function() {}
-}
+(function() {
+    return {
+        name: "Sample Plugin",
+        description: "This is a test plugin.",
+        version: "1.0.0",
+        author: "Author Name",
+        action: function(enabled) {
+            console.log(`Plugin is now ${enabled ? 'enabled' : 'disabled'}`);
+        }
+    };
+})();
